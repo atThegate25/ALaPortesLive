@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
+    "dateformat": "^3.0.3",
     "express": "^4.15.4",
     "mongoose": "^5.0.16",
     "mongoose-unique-validator": "^2.0.1"
