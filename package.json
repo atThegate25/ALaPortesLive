@@ -18,6 +18,8 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.15.4",
     "mongoose": "^5.0.16",
     "mongoose-unique-validator": "^2.0.1"
