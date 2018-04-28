@@ -16,7 +16,7 @@ export default class NavInternals extends Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a className="navbar-brand" href="#">Login dropdown</a>
+                        <a className="navbar-brand" href="#">AtTheGate</a>
                     </div>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav">
@@ -26,7 +26,7 @@ export default class NavInternals extends Component {
                             <li>
                                 <a href="#">Link</a>
                             </li>
-                            <li className="dropdown">
+                            {/* <li className="dropdown">
                                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">Dropdown
                                     <span className="caret"></span>
                                 </a>
@@ -49,7 +49,7 @@ export default class NavInternals extends Component {
                                         <a href="#">One more separated link</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> */}
                         </ul>
                         <form className="navbar-form navbar-left" role="search">
                             <div className="form-group">
@@ -72,10 +72,10 @@ export default class NavInternals extends Component {
                                             <div className="col-md-12">
                                                 Login via
                                                 <div className="social-buttons">
-                                                    <a href="#" className="btn btn-fb">
+                                                    <a  className="btn btn-fb">
                                                         <i className="fa fa-facebook"></i>
                                                         Facebook</a>
-                                                    <a href="#" className="btn btn-tw">
+                                                    <a  className="btn btn-tw">
                                                         <i className="fa fa-twitter"></i>
                                                         Twitter</a>
                                                 </div>
