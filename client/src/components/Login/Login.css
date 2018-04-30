@@ -1,0 +1,22 @@
+.form {
+    margin: 20px;
+    position: absolute;
+    left: 30%;
+    top: 75%;
+    width: 35%;
+    text-align: center;
+
+  }
+  
+  .form input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+.login {
+
+    right: 50;
+
+  }
