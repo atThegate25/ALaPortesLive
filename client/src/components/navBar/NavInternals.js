@@ -16,12 +16,12 @@ export default class NavInternals extends Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <a className="navbar-brand" href="#">AtTheGate</a>
+                        <a className="navbar-brand" href="#">🥡AtTheGate</a>
                     </div>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav">
                             <li className="active">
-                                <a href="#">Link</a>
+                                <a href="#">test flight search</a>
                             </li>
                             <li>
                                 <a href="#">Link</a>
