@@ -18,6 +18,16 @@ class App extends Component {
           <div>
             <NavBar />
             <Switch>
+<<<<<<< HEAD
+            <div>
+            <SplashScreen />
+            <Vendors />
+            </div>
+            <div>
+            </div>
+            <Route component={NoMatch} />
+=======
+>>>>>>> 6dc858c26010cdf57e53baccfc9d596c8b0ef020
             
             {/* <div>
             <Vendors />

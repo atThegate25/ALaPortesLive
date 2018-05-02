@@ -64,11 +64,17 @@ a.btn.btn-lg.btn-primary.form-group {
     z-index: 10;
 }
 
+.carousel-caption.h1,
+.carousel-caption.form-control {
+    position: relative;
+    top: 15%;
+}
+
 
 /* Declare heights because of positioning of img element */
 
 .carousel .item {
-    height: 500px;
+    height: 300px;
     background-color: #777;
 }
 
