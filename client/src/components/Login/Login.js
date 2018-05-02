@@ -39,23 +39,23 @@ handleFormSubmit = event => {
 
 render() {
     return (
-        <div>
-            <form className="form">
-          <input
+        <div className="form_div">
+            <form>
+          <input className="form"
             value={this.state.username}
             name="username"
             onChange={this.handleInputChange}
             type="text"
             placeholder="username"
           />
-          <input
+          <input className="form-p"
             value={this.state.password}
             name="password"
             onChange={this.handleInputChange}
             type="password"
-            placeholder="Password"
+            placeholder="password"
           />
-          <button onClick={this.handleFormSubmit}>Submit</button>
+          <button className="button" onClick={this.handleFormSubmit}>Submit</button>
         </form>
 
         </div>    
