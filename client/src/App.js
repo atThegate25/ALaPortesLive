@@ -17,9 +17,9 @@ class App extends Component {
             <Switch>
             <div>
             <SplashScreen />
+            <Vendors />
             </div>
             <div>
-            <Vendors />
             </div>
             <Route component={NoMatch} />
             </Switch>
