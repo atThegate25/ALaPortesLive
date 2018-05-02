@@ -6,6 +6,7 @@ import NavBar from './components/navBar';
 import SplashScreen from './components/Splashscreen';
 import Vendors from './components/Vendors/Vendors'
 import NoMatch from "./components/NoMatch/NoMatch";
+//import Flight from "./components/Flight/Flight" I removed it from line 26 because it modified the login form's css;
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
             <div>
             </div>
             <Route component={NoMatch} />
+            
             </Switch>
           </div>
         </Router>
