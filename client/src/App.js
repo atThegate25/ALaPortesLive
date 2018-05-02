@@ -17,7 +17,11 @@ class App extends Component {
         <Router>
           <div>
             <NavBar />
+<<<<<<< HEAD
             <Switch>
+=======
+            <Switch>         
+>>>>>>> 285b38a4f3c53a9b1366550a7338a1078d863c5f
             {/* <div>
             <Vendors />
             </div> */}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Vendors.css'
+import VendorsDetail from './VendorsDetail'
 
 export default class Vendors extends Component {
     render() {
@@ -24,17 +25,15 @@ export default class Vendors extends Component {
                                             <div class="col-md-12">
                                                 <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md" />
                                             </div>
-                                            <div>
-                                            <p><a className="btn btn-lg btn-primary form-group" href="#" role="button">Go</a></p>
-                                        </div>
                                         </div>
                                     </fieldset>
                                 </form>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <VendorsDetail />
             </div>
-            // </div>
         )
     }
 }
