@@ -24,6 +24,7 @@
         "dateformat": "^3.0.3",
         "express": "^4.15.4",
         "mongoose": "^5.0.16",
-        "mongoose-unique-validator": "^2.0.1"
+        "mongoose-unique-validator": "^2.0.1",
+        "serve": "^6.5.6"
     }
 }
