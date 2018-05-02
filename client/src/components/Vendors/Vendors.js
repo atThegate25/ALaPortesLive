@@ -17,7 +17,7 @@ export default class Vendors extends Component {
                         <img className="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide" />
                         <div className="container">
                             <div className="carousel-caption">
-                                <h1>Enter your Airport to get started</h1>
+                                <h1>Enter your Airport to get started please</h1>
                                 <form className="form-horizontal">
                                     <fieldset>
                                         <div class="form-group">
