@@ -17,18 +17,7 @@ class App extends Component {
         <Router>
           <div>
             <NavBar />
-            <Switch>
-<<<<<<< HEAD
-            <div>
-            <SplashScreen />
-            <Vendors />
-            </div>
-            <div>
-            </div>
-            <Route component={NoMatch} />
-=======
->>>>>>> 6dc858c26010cdf57e53baccfc9d596c8b0ef020
-            
+            <Switch>         
             {/* <div>
             <Vendors />
             </div> */}
