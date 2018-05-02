@@ -18,6 +18,7 @@ class App extends Component {
           <div>
             <NavBar />
             <Switch>
+              
             {/* <div>
             <Vendors />
             </div> */}
