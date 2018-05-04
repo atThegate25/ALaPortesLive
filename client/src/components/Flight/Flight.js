@@ -23,7 +23,7 @@ class Flight extends Component {
     };
 
     handleFormSubmit = event => {
-        // Preventing the default behavior of the form submit (which is to refresh the page)
+        // Preventing  the default behavior of the form submit (which is to refresh the page)
         event.preventDefault();
         console.log(event.target)
         console.log(this.state.airline); console.log(this.state.flightnumber);
@@ -32,10 +32,16 @@ class Flight extends Component {
     //componentWillMount() {
         //const { getAccessToken } = this.props.auth;
         //const headers = { 'Authorization': `Bearer ${getAccessToken()}`}
+        var today = new Date()
+        console.log(today.getDate())
         const airline = this.state.airline
         const flightNumber = this.state.flightnumber
-        const url = 'https://cors-anywhere.herokuapp.com/' + 'https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/' + airline + '/' + flightNumber + '/dep/2018/4/29?appId=c20436de&appKey=3902cfe4a98c5174174edc498a8aad35';
-        //'http://localhost:4000/courses'
+        const url = 'https://cors-anywhere.herokuapp.com/' +
+                    'https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/' + 
+                    airline + '/' + flightNumber + 
+                    '/dep/' + '/'+(today.getFullYear()) +'/' + (today.getMonth() + 1)+'/'+(today.getDate())+
+                    '?appId=c20436de&appKey=3902cfe4a98c5174174edc498a8aad35';
+        
         return axios.get(url)
             .then(response => {
                 this.setState({ gate:response.data.flightStatuses[0].airportResources.departureGate})
@@ -71,7 +77,7 @@ class Flight extends Component {
                     />
                     <button onClick={this.handleFormSubmit}>Submit</button>
                     <p>
-                        Your oder will be delivered at terminal {this.state.terminal} Gate {this.state.gate}
+                        Your oder will be delivered at Terminal {this.state.terminal} Gate {this.state.gate}
                     </p>
                 </form>
                
