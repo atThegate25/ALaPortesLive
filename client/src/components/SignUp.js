@@ -93,7 +93,7 @@ class SignUpForm extends Component {
                    type="password"
                    placeholder="Confirm Password"
                />
-               {/ *<button type="submit"> ask Poornima if the line below replaces this line???*/}
+               
                    <button disabled={isInvalid} type="submit">
                    Sign Up
                </button>
