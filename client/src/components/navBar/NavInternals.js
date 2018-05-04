@@ -51,12 +51,6 @@ export default class NavInternals extends Component {
                                 </ul>
                             </li> */}
                         </ul>
-                        <form className="navbar-form navbar-left" role="search">
-                            <div className="form-group">
-                                <input type="text" className="form-control" placeholder="Search"></input>
-                            </div>
-                            <button type="submit" className="btn btn-default">Submit</button>
-                        </form>
                         <ul className="nav navbar-nav navbar-right">
                             <li>
                                 <p className="navbar-text">Already have an account?</p>
