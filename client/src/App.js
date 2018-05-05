@@ -4,17 +4,17 @@ import {
  Route,
 } from 'react-router-dom';
 
-import Navigation from './Navigation';
-import LandingPage from './Landing';
-import SignUpPage from './SignUp';
-import SignInPage from './SignIn';
-import PasswordForgetPage from './PasswordForget';
-import HomePage from './Home';
-import AccountPage from './Account';
-import Flight from './Flight/Flight'
+import Navigation from './components/Navigation';
+import LandingPage from './components/Landing';
+import SignUpPage from './components/SignUp';
+import SignInPage from './components/SignIn';
+import PasswordForgetPage from './components/PasswordForget';
+import HomePage from './components/Home';
+import AccountPage from './components/Account';
+import Flight from './components/Flight/Flight'
 
-import * as routes from '../constants/routes';
-import { firebase } from '../firebase';
+import * as routes from './constants/routes';
+import { firebase } from './firebase';
 
 class App extends Component {
  constructor(props) {
