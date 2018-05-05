@@ -1,0 +1,97 @@
+@media only screen and (min-width: 1200px) {
+    .header-hero-unit {
+        width: 100%;
+        height: 450px;
+        background: url(https://www.mcdonalds.com/content/dam/usa/documents/d123/d123_marquee_d.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .bottom-text {
+        position: absolute;
+        bottom: 6px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .legal-disclaimer p {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+        font-family: LovinSansWeb, sans-serif;
+        font-weight: 100;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .bottom-text {
+        position: absolute;
+        bottom: 6px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .legal-disclaimer {
+        padding-top: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .bottom-text {
+        position: absolute;
+        bottom: 6px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .legal-disclaimer {
+        padding-top: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .bottom-text {
+        position: absolute;
+        bottom: 6px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .legal-disclaimer {
+        padding-top: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .bottom-text {
+        position: absolute;
+        bottom: 2px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .legal-disclaimer {
+        padding-top: 40px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {}
+
+.col-md-offset-2 {
+    margin-left: 16.66666667%;
+}
+
+
+/* @media (min-width: 992px)
+.col-md-8 { */

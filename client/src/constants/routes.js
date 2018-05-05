@@ -4,3 +4,6 @@ export const LANDING = '/';
 export const FLIGHT = '/flight';
 export const ACCOUNT = '/account';
 export const PASSWORD_FORGET = '/pw-forget';
+export const MCDCART = '/mcdcart';
+export const PBYCART = '/pbycart';
+export const STBCART = '/stbcart';

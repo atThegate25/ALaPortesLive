@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 app.use(bodyParser.json());
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/scraper";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/atthegateorders";
 mongoose.connect(MONGODB_URI);
 
 // Routes

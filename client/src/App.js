@@ -11,8 +11,15 @@ import SignInPage from './components/SignIn';
 import PasswordForgetPage from './components/PasswordForget';
 import HomePage from './components/Home';
 import AccountPage from './components/Account';
-import Flight from './components/Flight/Flight'
+
+
 import './App.css';
+
+import Flight from './components/Flight/Flight';
+import AddtoCartMCD from './components/Carts/AddtoCartMCD';
+import AddtoCartPBY from './components/Carts/AddtoCartPBY';
+import AddtoCartSTB from './components/Carts/AddtoCartSTB'
+
 
 import * as routes from './constants/routes';
 import { firebase } from './firebase';
@@ -66,6 +73,18 @@ class App extends Component {
      <Route
        exact path={routes.ACCOUNT}
        component={() => <AccountPage />}
+     />
+     <Route
+       exact path={routes.MCDCART}
+       component={() => <AddtoCartMCD />}
+     />
+     <Route
+       exact path={routes.PBYCART}
+       component={() => <AddtoCartPBY />}
+     />
+     <Route
+       exact path={routes.STBCART}
+       component={() => <AddtoCartSTB />}
      />
    </div>
  </Router>
