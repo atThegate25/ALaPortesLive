@@ -12,6 +12,7 @@ import PasswordForgetPage from './components/PasswordForget';
 import HomePage from './components/Home';
 import AccountPage from './components/Account';
 import Flight from './components/Flight/Flight'
+import './App.css';
 
 import * as routes from './constants/routes';
 import { firebase } from './firebase';
@@ -38,6 +39,7 @@ class App extends Component {
  <Router>
    <div>
      <Navigation authUser={this.state.authUser} />
+
 
      <hr />
 

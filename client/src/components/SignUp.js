@@ -3,6 +3,7 @@ import { Link, withRouter, } from 'react-router-dom';
 import { auth } from '../firebase';
 
 import * as routes from '../constants/routes';
+import '../App.css';
 
 const SignUpPage = ({ history }) =>
    <div>
@@ -69,6 +70,9 @@ class SignUpForm extends Component {
 
        return (
            <form onSubmit={this.onSubmit}>
+                <img className="background" src="https://lifetomyfullest.files.wordpress.com/2014/04/running-through-airport.jpg" alt="running through airport" height="100%" width="100%" />
+                <div className="title"> AT THE GATE </div>
+                <div className="subtitle">Feeding you before your flight</div>
                <input
                    value={username}
                    onChange={event => this.setState(byPropKey('username', event.target.value))}

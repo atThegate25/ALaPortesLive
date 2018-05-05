@@ -56,6 +56,7 @@ class Flight extends Component {
         // Notice how each input has a `value`, `name`, and `onChange` prop
         return (
             <div>
+                 <img className="background" src="https://lifetomyfullest.files.wordpress.com/2014/04/running-through-airport.jpg" alt="running through airport" height="100%" width="100%" />
                 
                 <form className="form">
                     <p>
