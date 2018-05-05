@@ -4,6 +4,7 @@ import { withRouter } from 'react-router-dom';
 import { SignUpLink } from './SignUp';
 import { auth } from '../firebase';
 import * as routes from '../constants/routes';
+import '../App.css';
 
 const SignInPage = ({ history }) =>
    <div>
@@ -42,7 +43,7 @@ class SignInForm extends Component {
        auth.doSignInWithEmailAndPassword(email, password)
            .then(() => {
                this.setState(() => ({ ...INITIAL_STATE }));
-               history.push(routes.HOME);
+               history.push(routes.FLIGHT);
            })
            .catch(error => {
                this.setState(byPropKey('error', error));
@@ -64,19 +65,22 @@ class SignInForm extends Component {
 
        return (
            <form onSubmit={this.onSubmit}>
-               <input
+           <img className="background" src="https://lifetomyfullest.files.wordpress.com/2014/04/running-through-airport.jpg" alt="running through airport" height="100%" width="100%" />
+           <div className="title"> AT THE GATE </div>
+           <div className="subtitle">Feeding you before your flight</div>
+               <input className="email"
                    value={email}
                    onChange={event => this.setState(byPropKey('email', event.target.value))}
                    type="text"
                    placeholder="Email Address"
                />
-               <input
+               <input className="password"
                    value={password}
                    onChange={event => this.setState(byPropKey('password', event.target.value))}
                    type="password"
                    placeholder="Password"
                />
-               <button disabled={isInvalid} type="submit">
+               <button disabled={isInvalid} className="button" type="submit">
                    Sign In
        </button>
 

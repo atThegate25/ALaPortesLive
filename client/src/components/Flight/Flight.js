@@ -14,7 +14,8 @@ class Flight extends Component {
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change
         const { name, value } = event.target;
-
+        console.log(value);
+        
         // Updating the input's state
         this.setState({
             [name]: value
@@ -47,15 +48,15 @@ class Flight extends Component {
                 this.setState({ gate:response.data.flightStatuses[0].airportResources.departureGate})
                 this.setState({terminal:response.data.flightStatuses[0].airportResources.departureTerminal})
                 console.log(this.state.terminal);console.log(this.state.gate)
-            }
-                // this.setState({ feeds: response.data })
-            );
+            })
+            .catch(error => {alert("Invalid Flight Info")});
     };
 
     render() {
         // Notice how each input has a `value`, `name`, and `onChange` prop
         return (
             <div>
+                 <img className="background" src="https://lifetomyfullest.files.wordpress.com/2014/04/running-through-airport.jpg" alt="running through airport" height="100%" width="100%" />
                 
                 <form className="form">
                     <p>
@@ -80,7 +81,8 @@ class Flight extends Component {
                         Your oder will be delivered at Terminal {this.state.terminal} Gate {this.state.gate}
                     </p>
                 </form>
-               
+                          
+                               
             </div>
         );
     }
