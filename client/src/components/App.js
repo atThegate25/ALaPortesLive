@@ -11,6 +11,7 @@ import SignInPage from './SignIn';
 import PasswordForgetPage from './PasswordForget';
 import HomePage from './Home';
 import AccountPage from './Account';
+import Flight from './Flight/Flight'
 
 import * as routes from '../constants/routes';
 import { firebase } from '../firebase';
@@ -57,8 +58,8 @@ class App extends Component {
        component={() => <PasswordForgetPage />}
      />
      <Route
-       exact path={routes.HOME}
-       component={() => <HomePage />}
+       exact path={routes.FLIGHT}
+       component={() => <Flight />}
      />
      <Route
        exact path={routes.ACCOUNT}
