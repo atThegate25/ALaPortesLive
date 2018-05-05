@@ -1,0 +1,48 @@
+[{
+        "name": "French Fries",
+        "price": 1.99,
+        "quantity": ""
+    },
+    {
+        "name": "Cheeseburger",
+        "price": 2.99,
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+    },
+    {
+        "name": "Big Mac",
+        "price": 3.99,
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+    },
+    {
+        "name": "Filet-O-Fish",
+        "price": 3.99,
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+    },
+    {
+        "name": "4 Piece Chicken McNuggets",
+        "price": 1.99,
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+    },
+    {
+        "name": "Soft Drink",
+        "price": 1.49,
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+    },
+    {
+        "name": "Iced Coffee",
+        "price": 1.99,
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+    },
+    {
+        "name": "Shake",
+        "price": 2.99,
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+    }
+]
