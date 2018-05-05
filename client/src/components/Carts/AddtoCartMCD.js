@@ -1,27 +1,28 @@
 import React, { Component } from "react";
 import axios from "axios";
+import mcDeeMenu from './CartUtils/mcdonalds.json'
 
 class AddtoCartMCD extends Component {
     state = {
-        name: "",
-        quantity: 0
+        name: "hardcode",
+        quantity: 1
     }
 
     handleInputChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
-
+        console.log(name + value)
         this.setState({
             [name]: value
         });
     }
-    addProductHandler = () => {
+    addProductHandler = (event) => { console.log(mcDeeMenu[0].name)
         const data = {
-            name: this.state.name,
+            name: mcDeeMenu[0].name,
             quantity: this.state.quantity
         };
-
-        axios.post("/api/", data).then(data => console.log("Success!"));
+        console.log(data)
+        axios.post("/api/", data).then(data => console.log("Success!"+data));
     }
 
     render() {
@@ -51,7 +52,7 @@ class AddtoCartMCD extends Component {
                                     <br />
                                     <input placeholder="Product quantity"
                                         type="number"
-                                        name="quantity"
+                                        name={mcDeeMenu[0].name}
                                         value={this.state.quantity}
                                         onChange={this.handleInputChange} />
                                     <button onClick={this.addProductHandler} className="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="">  <strong>Add to Cart</strong></button>
