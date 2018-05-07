@@ -3,6 +3,48 @@ import {Alert} from "react-bootstrap";
 import "./Flight.css";
 import axios from 'axios';
 
+const airlines = [
+	"American Airlines AA",
+	"United Airlines UA",
+	"Delta Airlines DL",
+	"Southwest Airlines WN", 
+	"Air Canada AC", 
+	"ANA NH",
+	"Air France AF",
+	"Alaska Airlines AS", 
+	"British Airways BA",
+	"Spirit Airlines NK",
+	"Frontier Airlines F9"
+]
+let _airline, _airlinepicked
+
+class Autocomplete extends Component {
+	
+	get value() {
+        return this.refs.inputAirline.value
+	}
+
+	set value(inputValue) {
+		this.refs.inputAirline.value = inputValue
+	}
+
+	render() {
+		return (
+			<div>
+				<input ref="inputAirline"
+					   type="text" 
+					   list="airlines" />
+				<datalist id="airlines">
+					{this.props.options.map(
+						(opt, i) => 
+						<option key={i}>{opt}</option>)}
+				</datalist>
+			</div>
+        )
+        
+	}
+}
+
 class Flight extends Component {
     // Setting the component's initial state
     state = {
@@ -12,27 +54,15 @@ class Flight extends Component {
         gate: "",
     };
 
-    // airlines= {
-    //     options: [
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //     ]
-    // },
-    // value: ''
-    handleAirline = event => {
-        const ddname = event.target;
-        console.log(ddname);
-    }
+    
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change
         const { name, value } = event.target;
         console.log(value);
-        
+        console.log(_airline.value);console.log(_airline.value.slice(_airline.value.length-2,_airline.value.length))
         // Updating the input's state
         this.setState({
+            airline: _airline.value.slice(_airline.value.length - 2, _airline.value.length),
             [name]: value
         });
         console.log(this.state.airline); console.log(this.state.flightnumber);
@@ -45,9 +75,6 @@ class Flight extends Component {
         console.log(this.state.airline); console.log(this.state.flightnumber);
     
 
-    //componentWillMount() {
-        //const { getAccessToken } = this.props.auth;
-        //const headers = { 'Authorization': `Bearer ${getAccessToken()}`}
         var today = new Date()
         console.log(today.getDate())
         const airline = this.state.airline
@@ -80,24 +107,10 @@ class Flight extends Component {
                     <p>
                         Hello! Gathering Terminal and Gate Info for {this.state.airline} {this.state.flightnumber}
                     </p>
-                    <div className="field-group">
-                        <label htmlFor="color-options">Airlines</label>
-                        <select name="colorOptions" id="color-options">
-                            <option>American Airlines</option>
-                            <option>United Airlines</option>
-                            <option>Delta Airlines</option>
-                            <option>SouthWest Airlines</option>
-                            onChange={this.handleAirline}
-                        </select>
-                    </div>
-                    <input
-                        value={this.state.airline}
-                        name="airline"
-                        onChange={this.handleInputChange}
-                        type="text"
-                        placeholder="Airline"
-                    />
-                    <label> Flight Number </label>
+                    <label htmlFor = "airline" >   Airline Name </label>
+                     <Autocomplete options = {airlines}
+                    ref = {input => _airline = input}/>
+                    <label>   Flight Number </label>
                     <input
                         value={this.state.flightnumber}
                         name="flightnumber"
@@ -109,10 +122,8 @@ class Flight extends Component {
                     <p>
                         Your oder will be delivered at Terminal {this.state.terminal} Gate {this.state.gate}
                     </p>
-                </form>
-                          
-                               
-            </div>
+                </form>                   
+           </div>
         );
     }
 }
