@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
+import PotbellyCart from './PotbellyCart'
 
-class AddtoCartMCD extends Component {
+class AddtoCartPBY extends Component {
     state = {
         name: "",
         quantity: 0
@@ -97,8 +98,9 @@ class AddtoCartMCD extends Component {
                         </div>
                     </div>
                 </div>
+                 <PotbellyCart />}
             </div>
         );
     }
 }
-export default AddtoCartMCD;
+export default AddtoCartPBY;

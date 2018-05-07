@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class AddtoCartMCD extends Component {
+class AddtoCartSTB extends Component {
     state = {
         name: "",
         quantity: 0
@@ -101,4 +101,4 @@ class AddtoCartMCD extends Component {
         );
     }
 }
-export default AddtoCartMCD;
+export default AddtoCartSTB;
