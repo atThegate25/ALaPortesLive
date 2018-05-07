@@ -22,8 +22,8 @@ const NavigationAuth = () =>
 
 const NavigationNonAuth = () =>
    <ul>
-       <li><Link to={routes.LANDING}>Landing</Link></li>
-       <li><Link to={routes.SIGN_IN}>Sign In</Link></li>
+       <li><Link to={routes.LANDING}><button className="btn">Landing</button></Link></li>
+       <li><Link to={routes.SIGN_IN}><button className="btn btn-info">Sign In</button></Link></li>
    </ul>
 
 export default Navigation;

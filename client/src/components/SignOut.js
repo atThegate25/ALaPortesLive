@@ -6,6 +6,7 @@ const SignOutButton = () =>
    <button
        type="button"
        onClick={auth.doSignOut}
+       className="btn btn-default"
    >
        <a href="/"> Sign Out </a>
  </button>
