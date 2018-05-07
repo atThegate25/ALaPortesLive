@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import {Alert} from "react-bootstrap";
 import "./Flight.css";
 import axios from 'axios';
 
@@ -9,23 +8,9 @@ class Flight extends Component {
         airline: "",
         flightnumber: "",
         terminal: "",
-        gate: "",
+        gate: ""
     };
 
-    // airlines= {
-    //     options: [
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //         { value: 'AA', displayValue: "American Airlines" },
-    //     ]
-    // },
-    // value: ''
-    handleAirline = event => {
-        const ddname = event.target;
-        console.log(ddname);
-    }
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change
         const { name, value } = event.target;
@@ -65,31 +50,17 @@ class Flight extends Component {
                 console.log(this.state.terminal);console.log(this.state.gate)
             })
             .catch(error => {alert("Invalid Flight Info")});
-            //  {<Alert bsStyle="warning">
-            //     <strong>Holy guacamole!</strong> Invalid Flight Info!
-            //     </Alert>});
     };
 
     render() {
         // Notice how each input has a `value`, `name`, and `onChange` prop
         return (
             <div>
-                 <img className="background" src="https://lifetomyfullest.files.wordpress.com/2014/04/running-through-airport.jpg" alt="running through airport" height="100%" width="100%" />
                 
                 <form className="form">
                     <p>
                         Hello! Gathering Terminal and Gate Info for {this.state.airline} {this.state.flightnumber}
                     </p>
-                    <div className="field-group">
-                        <label htmlFor="color-options">Airlines</label>
-                        <select name="colorOptions" id="color-options">
-                            <option>American Airlines</option>
-                            <option>United Airlines</option>
-                            <option>Delta Airlines</option>
-                            <option>SouthWest Airlines</option>
-                            onChange={this.handleAirline}
-                        </select>
-                    </div>
                     <input
                         value={this.state.airline}
                         name="airline"
@@ -97,15 +68,14 @@ class Flight extends Component {
                         type="text"
                         placeholder="Airline"
                     />
-                    <label> Flight Number </label>
                     <input
                         value={this.state.flightnumber}
                         name="flightnumber"
                         onChange={this.handleInputChange}
                         type="text"
-                        placeholder="Flight Number"
+                        placeholder="Flight Num"
                     />
-                    <button className="btn btn-info" type="submit"onClick={this.handleFormSubmit}>Submit</button>
+                    <button className="btn btn-info" type="submit" onClick={this.handleFormSubmit}>Submit</button>
                     <p>
                         Your oder will be delivered at Terminal {this.state.terminal} Gate {this.state.gate}
                     </p>

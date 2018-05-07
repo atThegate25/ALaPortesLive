@@ -1,32 +1,32 @@
 [
-    {"value":"AA","displayValue": "AMERICAN"},
+    {"ticker":"AA","alineName": "AMERICAN"},
     {
-        "value": "UA",
-        "displayValue": "UNITED"
+        "ticker": "UA",
+        "alineName": "UNITED"
 
     },
     {
-        "value": "DL",
-        "displayValue": "DELTA"
+        "ticker": "DL",
+        "alineName": "DELTA"
 
     },
     {
-        "value": "AC",
-        "displayValue": "AIR CANADA"
+        "ticker": "AC",
+        "alineName": "AIR CANADA"
 
     },
     {
-        "value": "NK",
-        "displayValue": "SPIRIT AIRLINES"
+        "ticker": "NK",
+        "alineName": "SPIRIT AIRLINES"
 
     },
     {
-        "value": "Y4",
-        "displayValue": "VOLARIS"
+        "ticker": "Y4",
+        "alineName": "VOLARIS"
 
     }, {
-        "value": "WN",
-        "displayValue": "SOUTH WEST AIRLINES"
+        "ticker": "WN",
+        "alineName": "SOUTH WEST AIRLINES"
 
     }
 ]
