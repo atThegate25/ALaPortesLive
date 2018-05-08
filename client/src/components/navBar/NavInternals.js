@@ -1,68 +1,33 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import '../css'
+
 export default class NavInternals extends Component {
 
     render() {
         return (
             <div>
-                <nav className="navbar navbar-default navbar-inverse" role="navigation">
-                    <div className="navbar-header">
-                        <button
-                            type="button"
-                            className="navbar-toggle collapsed"
-                            data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                            <span className="sr-only">Toggle navigation</span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                        </button>
-                        <a className="navbar-brand" href="#">🥡AtTheGate</a>
-                    </div>
-                    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul className="nav navbar-nav">
-                            <li className="active">
-                                <a href="/flight">test flight search</a>
-                            </li>
-                            <li>
-                                <a href="#">Link</a>
-                            </li>
-                        </ul>
-                        <ul className="nav navbar-nav navbar-right">
-                            <li>
-                                <p className="navbar-text">Already have an account?</p>
-                            </li>
-                            <li className="dropdown">
-                                <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                                    <b>Login</b>
-                                    <span className="caret"></span>
-                                </a>
-                                <ul id="login-dp" className="dropdown-menu">
-                                    <li>
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                Login via
-                                                <div className="social-buttons">
-                                                    <a  className="btn btn-fb">
-                                                        <i className="fa fa-facebook"></i>
-                                                        Facebook</a>
-                                                    <a  className="btn btn-tw">
-                                                        <i className="fa fa-twitter"></i>
-                                                        Twitter</a>
-                                                </div>
-                                            </div>
-                                            <div className="bottom text-center">
-                                                New here ?
-                                                <a href="#">
-                                                    <b>Join Us</b>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
+                <div class="header">
+                    <div class="fixed-header">
+                        <div class="container-fluid">
+                            <div class="header-logo">
+                                <a href="#"><h4><span><i class="fa fa-plane"></i> AtTh</span>eGATE</h4></a>
+                            </div>
+                            {/* <!-- end header-logo --> */}
+
+                            <div class="header-links">
+                                <ul class="list-unstyled list-inline">
+
+                                    <li class="shopping-cart"><a href="javascript:void(0)" id="shc-side-open"><span><i class="fa fa-shopping-cart"></i></span><span class="cart-badge">2</span></a></li>
+                                    <li class="user-link"><a href="javascript:void(0)" id="usr-side-open"><span><i class="fa fa-user"></i></span></a></li>
+                                    <li><a href="javascript:void(0)" id="sidenav-open"><span><i class="fa fa-bars"></i></span></a></li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </div>
+                            {/* <!-- end header-links --> */}
+                            {/* </div><!-- end container-fluid --> */}
+                        </div>
+                        {/* <!-- end fixed-header --> */}
                     </div>
-                </nav>
+                </div>
             </div>
         )
     }
