@@ -1,8 +1,7 @@
 const router = require("express").Router();
 const path = require("path");
 const orderRoute = require("./apiRoutes");
-// const htmlRouter = require("./htmlRoutes")
-    // console.log(orderRoute);
+
 
 
 router.use("/", orderRoute)

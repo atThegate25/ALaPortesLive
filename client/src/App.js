@@ -11,6 +11,7 @@ import SignInPage from './components/SignIn';
 import PasswordForgetPage from './components/PasswordForget';
 import HomePage from './components/Home';
 import AccountPage from './components/Account';
+import Footer from './components/Footer'
 
 
 import './App.css';
@@ -86,6 +87,7 @@ class App extends Component {
        exact path={routes.STBCART}
        component={() => <AddtoCartSTB />}
      />
+     <Footer />
    </div>
  </Router>
    );

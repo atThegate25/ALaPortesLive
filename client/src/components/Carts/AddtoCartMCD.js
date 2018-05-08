@@ -98,6 +98,7 @@ class AddtoCartMCD extends Component {
                         </div>
                     </div>
                 </div>
+                {this.state.quantity > 0 && <dummycomponent />}
             </div>
         );
     }

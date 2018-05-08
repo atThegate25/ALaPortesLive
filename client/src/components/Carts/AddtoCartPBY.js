@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import axios from "axios";
-import PotbellyCart from './PotbellyCart'
+// import PotbellyCart from './PotbellyCart'
+import CheckoutSummary from '../Checkout/CheckoutSummary'
 
 class AddtoCartPBY extends Component {
     state = {
-        name: "",
+        name: "newone",
         quantity: 0
     }
 
@@ -22,7 +23,7 @@ class AddtoCartPBY extends Component {
             quantity: this.state.quantity
         };
 
-        axios.post("/api/", data).then(data => console.log("Success!"));
+        axios.post("/pbyapi/api/", data).then(data => console.log("Success!"));
     }
 
     render() {
@@ -98,7 +99,8 @@ class AddtoCartPBY extends Component {
                         </div>
                     </div>
                 </div>
-                 <PotbellyCart />}
+                 {/* <PotbellyCart /> */}
+                 <CheckoutSummary />
             </div>
         );
     }
