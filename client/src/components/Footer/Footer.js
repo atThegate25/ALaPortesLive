@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
+// import '../js'
+import '../css'
+
 
 
 
@@ -7,7 +10,7 @@ export default class ComponentName extends Component {
 render() {
 return (
     <section id="footer" className="section-padding"> 
-                <div className="container-fluid text-center">
+                <div className="container-luid text-center">
                     <h3><span><i className="fa fa-plane"></i> ALa</span>Portes</h3>
                     <ul className="footer-contact list-unstyled">
                         <li><span><i className="fa fa-map-marker-alt"></i></span>Northwestern University, 239 E. Chicago Avenue, Chicago, Illinois. </li>
@@ -16,10 +19,10 @@ return (
                     </ul>
       
                     <ul className="footer-social list-unstyled list-inline">
-                        <li><a href="#"><span><i className="fa fa-facebook-f"></i></span></a></li>
+                        <li><a href="#"><span><i className="fab fa-facebook-f"></i></span></a></li>
                         {/* <li><a href="#"><span><i className="fab fa-instagram"></i></span></a></li>
                         <li><a href="#"><span><i className="fab fa-pinterest"></i></span></a></li> */}
-                        <li><a href="#"><span><i className="fa fa-twitter"></i></span></a></li>
+                        <li><a href="#"><span><i className="fab fa-twitter"></i></span></a></li>
                         {/* <li><a href="#"><span><i className="fab fa-dribbble"></i></span></a></li> */}
                     </ul>
                     <p className="copyright">© 2018 <Link to="/"><span><i className="fa fa-plane"></i></span> ALaPortesLive</Link>. All rights reserved.</p>
