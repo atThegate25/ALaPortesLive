@@ -21,7 +21,7 @@ class AddtoCartSTB extends Component {
             quantity: this.state.quantity
         };
 
-        axios.post("/api/", data).then(data => console.log("Success!"));
+        axios.post("/stbapi/api/", data).then(data => console.log("Success!"));
     }
 
     render() {
