@@ -9,7 +9,7 @@ const STBProductsStarbucks = require('../models/stbproducts');
 router.get("/mcdapi/api", (req, res) => MCDProducts.find({}).then(dbMCDProducts => res.json(dbMCDProducts)));
 // read one
 router.get("/mcdapi/api/:id", (req, res) => MCDProducts.find({_id: req.params.id}).then(dbMCDProducts => res.json(dbMCDProducts)));
-router.post("/mcdapi/api/", (req, res) => MCDProducts.create(req.body).then(dbMCDProducts => console.log(dbMCDProducts) 
+router.post("/mcdapi/api/", (req, res) => MCDProducts.create(req.body).then(dbMCDProducts => res.json(dbMCDProducts) 
 // res.json(dbMCDProducts)
 ));
 router.put("/mcdapi/:id", (req, res) => MCDProducts.updateOne({ _id: req.params.id }, req.body).then(dbMCDProducts => res.json(dbMCDProducts)));

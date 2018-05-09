@@ -4,7 +4,9 @@ import {Link} from "react-router-dom";
 
 class PotbellyCart extends Component {
     state = {
-        products: []
+        products: [
+
+        ]
     }
     
     deleteProduct = (event) => {
@@ -38,7 +40,7 @@ class PotbellyCart extends Component {
             <div>
                 <h1>All Products</h1>
                 <ul>
-                    {/* { allProducts } */}
+                    { allProducts }
                 </ul>
             </div>
         );

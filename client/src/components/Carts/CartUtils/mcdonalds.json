@@ -1,7 +1,8 @@
 [{
         "name": "Bacon McDouble®",
         "price": 1.99,
-        "quantity": ""
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/content/dam/usa/documents/d123/products/bacon_mcdouble.png"
     },
     {
         "name": "Cheeseburger",
