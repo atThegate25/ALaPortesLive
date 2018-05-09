@@ -7,7 +7,6 @@ export default class NavInternals extends Component {
     render() {
         return (
             <div>
-                {/* <SC_Sidebar/> */}
                 <div className="header">
                     <div className="fixed-header">
                         <div className="container-fluid">
@@ -30,6 +29,7 @@ export default class NavInternals extends Component {
                         {/* <!-- end fixed-header --> */}
                     </div>
                 </div>
+                <SC_Sidebar/>
             </div>
         )
     }
