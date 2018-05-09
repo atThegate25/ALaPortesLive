@@ -34,7 +34,7 @@ export default class InputComponent1 extends Component {
                                 name={menuItem.name}
                                 value={this.state.value}
                                 onChange={this.handleInputChange.bind(this)} />
-                            <button onClick={() => this.props.addToCart(menuItem.name, menuItem.price, this.state.value, menuItem.image)} className="btn" >Add to cart<span><i className="fa fa-shopping-cart" data-name={menuItem.name} data-summary="summary 1" data-price="10" data-quantity="1"></i></span></button>
+                            <button onClick={() => this.props.addToCart(menuItem.name, menuItem.price, this.state.value, menuItem.image)} className="btn" >Add to cart!<span><i className="fa fa-shopping-cart" data-name={menuItem.name} data-summary="summary 1" data-price="10" data-quantity="1"></i></span></button>
                         </div>
                         {/* <!-- end dish-list-text --> */}
                     </div>
