@@ -46,6 +46,7 @@ class AddtoCartPBY extends Component {
     }
     render() {
         return (
+            <body className="page-body">
             <section className="page-wrapper innerpage-section-padding">
             <div id="menu-page" className="menu-list">
             <div className="container-fluid text-center menu">
@@ -64,6 +65,7 @@ class AddtoCartPBY extends Component {
             </div >
             </div>
             </section>
+            </body>
         );
     }
 }
