@@ -29,6 +29,13 @@
         "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
     },
     {
+        "name": "2 Pc. Buttermilk Crispy Tenders",
+        "price": 1.99,
+        "quantity": "",
+        "image": " https://www.mcdonalds.com/content/dam/usa/documents/d123/products/tenders.png"
+    },
+
+    {
         "name": "Soft Drink",
         "price": 1.49,
         "quantity": "",

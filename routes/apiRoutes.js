@@ -19,10 +19,10 @@ router.delete("/mcdapi/:id", (req, res) => MCDProducts.deleteOne({_id: req.param
 // read all
 router.get("/pbyapi/api", (req, res) => PBYProducts.find({}).then(dbPBYProducts => res.json(dbPBYProducts)));
 // read one
-router.get("pbyapi/api/:id", (req, res) => PBYProducts.find({_id: req.params.id}).then(dbPBYProducts => res.json(dbPBYProducts)));
+router.get("/pbyapi/api/:id", (req, res) => PBYProducts.find({_id: req.params.id}).then(dbPBYProducts => res.json(dbPBYProducts)));
 router.post("/pbyapi/api", (req, res) => PBYProducts.create(req.body).then(dbPBYProducts => res.json(dbPBYProducts)));
-router.put("pbyapi/api/:id", (req, res) => PBYProducts.updateOne({ _id: req.params.id }, req.body).then(dbPBYProducts => res.json(dbPBYProducts)));
-router.delete("pbyapi/api/:id", (req, res) => PBYProducts.deleteOne({_id: req.params.id}).then(dbPBYProducts=>res.json(dbPBYProducts)));
+router.put("/pbyapi/api/:id", (req, res) => PBYProducts.updateOne({ _id: req.params.id }, req.body).then(dbPBYProducts => res.json(dbPBYProducts)));
+router.delete("/pbyapi/api/:id", (req, res) => PBYProducts.deleteOne({_id: req.params.id}).then(dbPBYProducts=>res.json(dbPBYProducts)));
 
 //Starbucks Routes
 // read all
