@@ -29,7 +29,7 @@ export default class NavInternals extends Component {
                         {/* <!-- end fixed-header --> */}
                     </div>
                 </div>
-                <SC_Sidebar/>
+                {/* <SC_Sidebar/> */}
             </div>
         )
     }
