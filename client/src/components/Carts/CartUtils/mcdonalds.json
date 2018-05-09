@@ -46,11 +46,5 @@
         "price": 1.99,
         "quantity": "",
         "image": "https://d1nqx6es26drid.cloudfront.net/app/uploads/2015/04/16032302/product-iced-mocha.png"
-    },
-    {
-        "name": "Shake",
-        "price": 2.99,
-        "quantity": "",
-        "image": "https://d1nqx6es26drid.cloudfront.net/app/uploads/2015/04/04041644/product-chocolate-milkshake.png"
     }
 ]
