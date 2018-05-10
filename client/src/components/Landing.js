@@ -10,7 +10,7 @@ const LandingPage = () =>
     }} 
     >
        <h2 className="LoginTitle"> AT THE GATE </h2>
-        <h3 className="LoginTitle">Feeding you before your flight</h3>
+        <h3 className="LoginText">Feeding you before your flight</h3>
     </div>
 
 export default LandingPage;
