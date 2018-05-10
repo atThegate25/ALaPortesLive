@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
 import {Link} from "react-router-dom";
+
 export default class Cart extends Component {
 
 
@@ -40,7 +41,7 @@ export default class Cart extends Component {
             </li>
             )
         });
-        const total = allProducts.forEach(this.quantity , this.price => {this.quantity * this.price});
+        const total = allProducts.forEach((quantity, price) => (this.quantity * this.price));
         console.log(total)
         return (
             <section className="page-wrapper innerpage-section-padding">
