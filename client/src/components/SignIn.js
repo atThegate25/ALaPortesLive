@@ -74,7 +74,7 @@ class SignInForm extends Component {
                     <div id="login-page">
                         <div className="container-fluid text-center">
                             <div className="innerpage-heading">
-                                <h2 > AT THE GATE </h2>
+                                <h2 className="LoginTitle"> AT THE GATE </h2>
                                 <p>Feeding you before your flight</p>
                             </div>
                             <form className="custom-form" onSubmit={this.onSubmit}>
