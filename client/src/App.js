@@ -18,7 +18,7 @@ import './App.css';
 
 import Flight from './components/Flight/Flight';
 import AddtoCartMCD from './components/Carts/AddtoCartMCD';
-// import OrderandCart from './components/Carts/OrderandCart';
+import OrderandCart from './components/Carts/OrderandCart';
 import AddtoCartSTB from './components/Carts/AddtoCartSTB'
 
 
@@ -82,7 +82,7 @@ class App extends Component {
      />
      <Route
        exact path={routes.PBYCART}
-       component={() => <AddtoCartPBY />}
+       component={() => <OrderandCart />}
      />
      <Route
        exact path={routes.STBCART}

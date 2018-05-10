@@ -11,7 +11,7 @@ export default class NavInternals extends Component {
                     <div className="fixed-header">
                         <div className="container-fluid">
                             <div className="header-logo">
-                                <a href="#"><h4><span><i className="fa fa-plane"></i> AtTh</span>eGATE</h4></a>
+                                <a href="/"><h4><span><i className="fa fa-plane"></i> AtTh</span>eGATE</h4></a>
                             </div>
                             {/* <!-- end header-logo --> */}
 
