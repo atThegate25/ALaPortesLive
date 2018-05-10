@@ -5,6 +5,7 @@ import PotbellyCart from './PotbellyCart'
 import CheckoutSummary from '../Checkout/CheckoutSummary'
 import menuItems from './CartUtils/mcdonalds.json'
 import InputComponent1 from './InputComponent1'
+import Cart from './Cart'
 
 class AddtoCartPBY extends Component {
     state = {
@@ -58,7 +59,7 @@ class AddtoCartPBY extends Component {
                         )
                     })}
                 </div>
-                <PotbellyCart update={this.updateCart}
+                <Cart update={this.updateCart}
                     products={this.state.products}
                     delete={this.deleteItem} />
                 {/* <CheckoutSummary /> */}
