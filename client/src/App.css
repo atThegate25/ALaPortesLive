@@ -166,6 +166,17 @@
     color: rgb(139, 9, 35);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-bottom: 4px;
+    margin: auto;
+}
+
+h2.LoginTitle,
+h3.LoginTitle {
+    width: 50%;
+    font-size: 80px;
+    color: rgb(139, 9, 35);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 4px;
+    margin: auto;
 }
 
 .title {
