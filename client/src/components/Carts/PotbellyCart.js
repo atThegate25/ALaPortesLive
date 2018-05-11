@@ -3,33 +3,18 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 
 class PotbellyCart extends Component {
-    state = {
-        products: [
 
-        ]
-    }
     
     deleteProduct = (event) => {
-            const id = event.target.value;
-            axios.delete(`/pbyapi/api/:${id}`).then(response => {
-                    this.setState({
-                            products: this.state.products.filter(product => product._id !== id)
-                        });
-                    });
+            this.props.delete(event)
                 }
                 componentDidMount = () => {
                     // componentDidMount (LifeCycle)
                     // request from the server all of the products
-                    axios.get("/pbyapi/api/").then((response) => {
-                        
-                        this.setState({
-                            products: response.data
-                        })
-                        console.log(this.state.products)
-                    });
+                    this.props.update()
                 }
                 render() {
-        const allProducts = this.state.products.map(product => {
+        const allProducts = this.props.products.map(product => {
             return (<li>
                         {product.name} - ${product.quantity} 
                         <Link to={"pbyapi/edit/" + product._id}>✏</Link>
