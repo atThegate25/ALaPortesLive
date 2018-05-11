@@ -6,8 +6,8 @@ import {Link} from "react-router-dom";
 export default class Cart extends Component {
 
 
-    deleteProduct = (event) => {
-        this.props.delete(event)
+    deleteProduct = (id) => {
+        this.props.delete(id)
     }
     componentDidMount = () => {
         // componentDidMount (LifeCycle)
@@ -33,7 +33,7 @@ export default class Cart extends Component {
                     <h4 className="total">Total: <span>${product.quantity + product.price}</span></h4>
 
                     <div className="item-close">
-                        <button onClick={this.deleteProduct} value={product._id} className="btn"><span><i className="fa fa-times-circle"></i></span></button>
+                        <button onClick={() => this.deleteProduct(product._id)} className="btn"><span><i className="fa fa-times-circle"></i></span></button>
                     </div>
                     {/* <!-- end item-close --> */}
                 </div>
@@ -41,8 +41,7 @@ export default class Cart extends Component {
             </li>
             )
         });
-        const total = allProducts.forEach((quantity, price) => (this.quantity * this.price));
-        console.log(total)
+        const total = this.props.products.reduce((value, product) => value + (product.quantity  * product.price), 0);
         return (
             <section className="page-wrapper innerpage-section-padding">
                 <div id="shopping-cart-page">
