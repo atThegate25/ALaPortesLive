@@ -46,5 +46,4 @@ export default class InputComponent1 extends Component {
             </ul>
         )
     }
-
 }

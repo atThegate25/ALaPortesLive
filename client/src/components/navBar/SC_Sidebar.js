@@ -3,6 +3,13 @@ import '../css'
 
 
 export default class SC_Sidebar extends Component {
+
+    componentWillMount() {
+        // sets the initial state
+        this.setState({
+          isMenuOpened: false
+        })
+      }
     render() {
         return (
 
