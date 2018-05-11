@@ -77,8 +77,8 @@ const NavigationNonAuth = () =>
     </Nav> */}
     <Nav pullRight>
        <NavDropdown eventKey={1} title="Sign In / Sign Up" id="basic-nav-dropdown">
-        <MenuItem eventKey={1.1}><Link to={routes.SIGN_IN}><span><i class="fa fa-sign-out-alt"></i></span>Sign in</Link></MenuItem>
-        <MenuItem eventKey={1.2}><Link to={routes.SIGN_UP}>Sign Up</Link></MenuItem>
+        <MenuItem eventKey={1.1}><Link to={routes.SIGN_IN}><span><i class="fa fa-sign-out-alt"></i></span>Sign In</Link></MenuItem>
+        <MenuItem eventKey={1.2}><Link to={routes.SIGN_UP}><span><i class="fa fa-sign-out-alt"></i></span>Sign Up</Link></MenuItem>
         {/* <MenuItem eventKey={1.2}>Another action</MenuItem>
         <MenuItem eventKey={1.3}>Something else here</MenuItem>
         <MenuItem divider /> */}
