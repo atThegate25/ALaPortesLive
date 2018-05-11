@@ -186,6 +186,15 @@ h3.LoginText {
     margin: auto;
 }
 
+a i.fa.fa-sign-out-alt {
+    color: rgb(139, 9, 35) !important;
+}
+
+.signout {
+    background-color: #101010 !important;
+    border: none !important;
+}
+
 .title {
     position: absolute;
     left: 0;
