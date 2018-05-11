@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './css';
 
 const LandingPage = () =>
     <div className="page-wrapper innerpage-section-padding"
