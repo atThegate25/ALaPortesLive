@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import {Alert, bsStyle} from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import "./Flight.css";
 import axios from 'axios';
+import SignOutButton from '../SignOut';
+import * as routes from '../../constants/routes';
+
 
 const airlines = [
 	"American Airlines AA",
@@ -126,8 +130,9 @@ class Flight extends Component {
                     <p>
                         Your order will be delivered at Terminal {this.state.terminal} Gate {this.state.gate}
                     </p>
+                         <Link to={routes.PBYCART}><button className="btn btn-info">Order Food</button></Link>
                 </form>        
-
+           
            </div>
         );
     }
