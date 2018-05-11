@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import '../css'
-import PotbellyCart from './PotbellyCart'
-// import CheckoutSummary from '../Checkout/CheckoutSummary'
-import menuItems from './CartUtils/mcdonalds.json'
+import menuItems from './CartUtils/potbelly.json'
 import InputComponent1 from './InputComponent1'
 import Cart from './Cart'
 
@@ -62,7 +60,6 @@ class AddtoCartPBY extends Component {
                 <Cart update={this.updateCart}
                     products={this.state.products}
                     delete={this.deleteItem} />
-                {/* <CheckoutSummary /> */}
             </div >
             </div>
             </section>

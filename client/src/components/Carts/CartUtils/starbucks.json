@@ -1,0 +1,61 @@
+[{
+        "name": "Cafe Mocha",
+        "price": 4.15,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/191cb21a271743abbca5d13f053229f2.jpg"
+    },
+    {
+        "name": "White Chocolate Mocha",
+        "price": 3.75,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/0873c92be1084a3ebdd7688271672089.jpg"
+    },
+    {
+        "name": "Freshly Brewed Coffee",
+        "price": 2.10,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/0873c92be1084a3ebdd7688271672089.jpg"
+    },
+    {
+        "name": "Caffe Latte",
+        "price": 3.65,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/582c9f3da101446cbcc311aeac32f2f2.jpg"
+    },
+    {
+        "name": "Cinnamon Dolce Latte",
+        "price": 4.25,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/05850495d5db4c47b72906f82d8b4ca5.jpg"
+    },
+    {
+        "name": "Skinny Vanilla Latte",
+        "price": 4.15,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/0ff1b3b4e6534d4daa8cb149514f3bf9.jpg"
+    },
+    {
+        "name": "Caramel Macchiato",
+        "price": 4.45,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/d961948d45114601bad6b6c9d5993afa.jpg"
+    },
+    {
+        "name": "Iced Lemon Pound Cake",
+        "price": 2.45,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/0c89ec1617394dd5b09eaa2ed87d233e.jpg"
+    },
+    {
+        "name": "Cheese & Fruit Bistro Box",
+        "price": 4.95,
+        "quantity": "",
+        "image": "https://globalassets.starbucks.com/assets/44458a6d471545d29a621bfb8e7d6989.jpg"
+    },
+    {
+        "name": "Vanilla Bean Crème Frappuccino",
+        "price": 3.95,
+        "quantity": "",
+        "image": "https://starbucks.com/assets/ba2ef7929c484d7d8efc29c987b474c7.jpg"
+    }
+]

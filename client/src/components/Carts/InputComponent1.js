@@ -4,7 +4,7 @@ import '../css'
 
 export default class InputComponent1 extends Component {
     state = {
-        value: 0
+        value: 1
 
     }
     handleInputChange = (event) => {
@@ -30,11 +30,15 @@ export default class InputComponent1 extends Component {
                             <h5>${menuItem.price}</h5>
                             <input className="form-control" placeholder="Product quantity"
                                 type="number"
-                                style={{width: "55px", display: "inline-block", "margin-right": "4px"}}
+                                style={{width: "55px", display: "inline-block", "margin-right": "4px", "margin-bottom": "10px"}}
                                 name={menuItem.name}
                                 value={this.state.value}
+                                min="1"
                                 onChange={this.handleInputChange.bind(this)} />
-                            <button onClick={() => this.props.addToCart(menuItem.name, menuItem.price, this.state.value, menuItem.image)} className="btn" >Add to cart!<span><i className="fa fa-shopping-cart" data-name={menuItem.name} data-summary="summary 1" data-price="10" data-quantity="1"></i></span></button>
+                            <button onClick={() => this.props.addToCart(menuItem.name, menuItem.price, this.state.value, menuItem.image)} 
+                            className="btn" >Add to cart!
+                            <span><i className="fa fa-shopping-cart" data-name={menuItem.name} data-summary="summary 1" data-price="10" data-quantity="1">
+                            </i></span></button>
                         </div>
                         {/* <!-- end dish-list-text --> */}
                     </div>

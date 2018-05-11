@@ -56,7 +56,7 @@ export default class Cart extends Component {
                         <div className="cart-info text-right">
                             <h4>Item(s) : <span>{this.length}</span></h4>
                             <h4>Total Price: <span>${total}</span></h4>
-                            <a href="menu-list.html" className="btn btn-black">Continue Shopping</a>
+                            <a href="menu-list.html" className="btn btn-black" style={{'margin-right': '5px'}} >Continue Shopping</a>
                             <a href="checkout.html" className="btn btn-orange">Checkout</a>
                         </div>
                         {/* <!-- end cart-info --> */}
