@@ -24,8 +24,8 @@ class AddtoCartPBY extends Component {
             console.log(this.state.products)
         });
     }
-    deleteItem = (event) => {
-        const id = event.target.value;
+    deleteItem = (id) => {
+        // const id = event.target.value;
         axios.delete(`/pbyapi/api/${id}`).then(response => {
             this.setState({
                 products: this.state.products.filter(product => product._id !== id)
