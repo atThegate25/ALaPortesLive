@@ -30,7 +30,7 @@ export default class InputComponent1 extends Component {
                             <h5>${menuItem.price}</h5>
                             <input className="form-control" placeholder="Product quantity"
                                 type="number"
-                                style={{width: "55px", display: "inline-block", "margin-right": "4px"}}
+                                style={{width: "55px", display: "inline-block", "margin-right": "4px", "margin-bottom": "10px"}}
                                 name={menuItem.name}
                                 value={this.state.value}
                                 min="1"
