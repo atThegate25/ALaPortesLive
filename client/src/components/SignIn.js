@@ -8,9 +8,9 @@ import '../App.css';
 
 const SignInPage = ({ history }) =>
    <div>
-       <h1>SignIn</h1>
-       <SignInForm history={history} />
+       {/* <h1>SignIn</h1> */}
        <SignUpLink />
+       <SignInForm history={history} />
    </div>
 
 const byPropKey = (propertyName, value) => () => ({
@@ -64,11 +64,12 @@ class SignInForm extends Component {
            email === '';
 
        return (
-           <form onSubmit={this.onSubmit}>
-           <img className="background" src="https://lifetomyfullest.files.wordpress.com/2014/04/running-through-airport.jpg" alt="running through airport" height="100%" width="100%" />
+           <div>
+               <img className="background" src="https://lifetomyfullest.files.wordpress.com/2014/04/running-through-airport.jpg" alt="running through airport" height="50%" width="100%" />
            <div className="title"> AT THE GATE </div>
-           <div className="subtitle">Feeding you before your flight</div>
-               <input className="email"
+           {/* <div className="subtitle">Feeding you before your flight</div>  */}
+           <form onSubmit={this.onSubmit}>
+                <input className="email"
                    value={email}
                    onChange={event => this.setState(byPropKey('email', event.target.value))}
                    type="text"
@@ -80,12 +81,14 @@ class SignInForm extends Component {
                    type="password"
                    placeholder="Password"
                />
+               <br />
                <button disabled={isInvalid} className="button" type="submit">
                    Sign In
-       </button>
+                </button>
 
                {error && <p>{error.message}</p>}
            </form>
+            </div>
        );
    }
 }

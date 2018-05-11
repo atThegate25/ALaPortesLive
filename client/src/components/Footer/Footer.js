@@ -13,7 +13,7 @@ return (
                 <div className="container-luid text-center">
                     <h3><span><i className="fa fa-plane"></i> ALa</span>Portes</h3>
                     <ul className="footer-contact list-unstyled">
-                        <li><span><i className="fa fa-map-marker-alt"></i></span>Northwestern University, 239 E. Chicago Avenue, Chicago, Illinois. </li>
+                        <li><span><i className="fa fa-map-marker-alt"></i></span>Northwestern University, 339 E. Chicago Avenue, Chicago, Illinois. </li>
                         <li><span><i className="fa fa-envelope"></i></span> atthegatewebapp@gmail.com</li>
                         <li><span><i className="fa fa-phone"></i></span> +312 555 1212</li>
                     </ul>
