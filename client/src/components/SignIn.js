@@ -115,14 +115,6 @@ class SignInForm extends Component {
                                 <a href="forgot-password.html">Forgot Password ?</a>
                                 <p> New Here ? <a href="register.html">Register Now</a></p>
                             </div>
-                            {/* <div className="form-page-connect-social" style={{width: '55%', margin: 'auto'}} >
-                            <h4>Login with</h4>
-                            <ul className="list-unstyled">
-                                <li><button className="btn btn-block fb"><span><i className="fab fa-facebook-f"></i></span>Facebook</button></li>
-                                <li><button className="btn btn-block gm"><span><i className="fab fa-google"></i></span>Gmail</button></li>
-                                <li><button className="btn btn-block any">Login With Any Other Account</button></li>
-                            </ul>
-                        </div> */}
                         </div>
                     </div>
                 </section>
