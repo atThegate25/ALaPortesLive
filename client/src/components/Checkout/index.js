@@ -1,3 +1,1 @@
-export * from './CheckoutBar'
-export * from './CheckoutField'
-export * from './CheckoutSummary'
+export { default } from "./Checkout";
