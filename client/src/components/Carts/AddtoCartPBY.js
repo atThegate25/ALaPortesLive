@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import PotbellyCart from './PotbellyCart'
-import CheckoutSummary from '../Checkout/CheckoutSummary'
+// import CheckoutSummary from '../Checkout/CheckoutSummary'
 import menuItems from './CartUtils/mcdonalds.json'
 
 class AddtoCartPBY extends Component {

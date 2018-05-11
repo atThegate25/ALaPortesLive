@@ -7,3 +7,4 @@ export const PASSWORD_FORGET = '/pw-forget';
 export const MCDCART = '/mcdcart';
 export const PBYCART = '/pbycart';
 export const STBCART = '/stbcart';
+export const CHECKOUT = '/checkout';

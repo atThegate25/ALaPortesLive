@@ -11,8 +11,6 @@ import SignInPage from './components/SignIn';
 import PasswordForgetPage from './components/PasswordForget';
 import HomePage from './components/Home';
 import AccountPage from './components/Account';
-import Footer from './components/Footer'
-import Checkout from './components/Checkout';
 
 
 import './App.css';
@@ -21,7 +19,7 @@ import Flight from './components/Flight/Flight';
 import AddtoCartMCD from './components/Carts/AddtoCartMCD';
 import AddtoCartPBY from './components/Carts/AddtoCartPBY';
 import AddtoCartSTB from './components/Carts/AddtoCartSTB'
-
+import Checkout from './components/Checkout';
 
 import * as routes from './constants/routes';
 import { firebase } from './firebase';
@@ -88,11 +86,6 @@ class App extends Component {
        exact path={routes.STBCART}
        component={() => <AddtoCartSTB />}
      />
-     <Route
-       exact path={routes.CHECKOUT}
-       component={() => <Checkout />}
-     />
-     <Footer />
    </div>
  </Router>
    );
