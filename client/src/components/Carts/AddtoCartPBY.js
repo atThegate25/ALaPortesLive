@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import '../css'
 import PotbellyCart from './PotbellyCart'
-import CheckoutSummary from '../Checkout/CheckoutSummary'
+// import CheckoutSummary from '../Checkout/CheckoutSummary'
 import menuItems from './CartUtils/mcdonalds.json'
 import InputComponent1 from './InputComponent1'
 import Cart from './Cart'
