@@ -59,7 +59,7 @@ class AddtoCartMCD extends Component {
                                 </div>
                                 <div className="col-md-3 col-xs-6 product-image text-center">
                                     <img src="https://www.mcdonalds.com/content/dam/usa/documents/d123/products/tenders.png" className="img-responsive center-block" alt="2 Pc. Buttermilk Crispy Tenders" title="" />
-                                    <h3>2 Pc. Buttermilk Crispy Tenders</h3>
+                                    <h3>2 Pc. Buttermilk Crispy Tenders Are good</h3>
                                     <a href="https://www.mcdonalds.com/us/en-us/product/buttermilk-crispy-chicken-tenders-4-piece.html" target="_self" data-at="D123LandingPage:2 Pc Buttermilk Crispy Tenders" data-track="promotion" className="learn-more" aria-label="Learn More About 2 Pc. Buttermilk Crispy Tenders">Learn more  </a>
                                     <br />
                                     <input placeholder="Product quantity"

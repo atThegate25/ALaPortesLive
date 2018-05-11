@@ -9,7 +9,16 @@ const ProductSchema = new Schema({
     },
     quantity: {
         type: Number,
+    },
+
+    price: {
+        type: Number,
+    },
+
+    image: {
+        type: String,
     }
+
 });
 
 const PBYProducts = mongoose.model("PBYProducts", ProductSchema);

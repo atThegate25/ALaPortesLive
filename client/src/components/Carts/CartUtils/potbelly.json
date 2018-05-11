@@ -1,0 +1,60 @@
+[{
+        "name": "Wreck",
+        "price": 5.30,
+        "image": "",
+        "quantity": ""
+    },
+    {
+        "name": "Grilled Chicken",
+        "price": 5.70,
+        "image": "",
+        "quantity": ""
+    },
+    {
+        "name": "Tuna Salad",
+        "price": 5.10,
+        "image": "",
+        "quantity": ""
+    },
+    {
+        "name": "Mediterranean",
+        "price": 5.50,
+        "image": "",
+        "quantity": ""
+    },
+    {
+        "name": "Chicken Salad",
+        "price": 5.30,
+        "image": "",
+        "quantity": ""
+    },
+    {
+        "name": "Farmhouse Salad",
+        "price": 7.50,
+        "image": "",
+        "quantity": ""
+    },
+    {
+        "name": "Broccoli Cheddar",
+        "price": 3.30,
+        "image": "",
+        "quantity": ""
+    },
+    {
+        "name": "Oatmeal Chocolate Chip Cookie",
+        "price": 1.30,
+        "image": "",
+        "quantity": ""
+    },
+    {
+        "name": "Soda",
+        "price": 1.35,
+        "quantity": ""
+    },
+    {
+        "name": "Classic Shake",
+        "price": 3.00,
+        "image": "",
+        "quantity": ""
+    }
+]

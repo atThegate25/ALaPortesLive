@@ -1,48 +1,50 @@
 [{
         "name": "Bacon McDouble®",
         "price": 1.99,
-        "quantity": ""
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/content/dam/usa/documents/d123/products/bacon_mcdouble.png"
     },
     {
         "name": "Cheeseburger",
         "price": 2.99,
         "quantity": "",
-        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+        "image": "https://www.mcdonalds.com/content/dam/usa/documents/d123/products/cheeseburger.png"
     },
     {
-        "name": "Big Mac",
+        "name": "Triple Cheeseburger",
         "price": 3.99,
         "quantity": "",
-        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+        "image": "https://www.mcdonalds.com/content/dam/usa/documents/d123/products/triple_cheeseburger.png"
     },
     {
-        "name": "Filet-O-Fish",
+        "name": "New Classic Chicken",
         "price": 3.99,
         "quantity": "",
-        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+        "image": "https://www.mcdonalds.com/content/dam/usa/documents/d123/products/classic_chicken.png"
     },
     {
-        "name": "4 Piece Chicken McNuggets",
+        "name": "McChicken",
         "price": 1.99,
         "quantity": "",
-        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+        "image": "https://www.mcdonalds.com/content/dam/usa/documents/d123/products/mcchicken.png"
     },
+    {
+        "name": "2 Pc. Buttermilk Crispy Tenders",
+        "price": 1.99,
+        "quantity": "",
+        "image": "https://www.mcdonalds.com/content/dam/usa/documents/d123/products/tenders.png"
+    },
+
     {
         "name": "Soft Drink",
         "price": 1.49,
         "quantity": "",
-        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+        "image": "https://www.mcdonalds.com/content/dam/usa/documents/d123/products/soft_drink.png"
     },
     {
         "name": "Iced Coffee",
         "price": 1.99,
         "quantity": "",
-        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
-    },
-    {
-        "name": "Shake",
-        "price": 2.99,
-        "quantity": "",
-        "image": "https://www.mcdonalds.com/us/en-us/product/bacon-mcdouble.html"
+        "image": "https://d1nqx6es26drid.cloudfront.net/app/uploads/2015/04/16032302/product-iced-mocha.png"
     }
 ]

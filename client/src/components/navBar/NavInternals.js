@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css'
+import SC_Sidebar from './SC_Sidebar'
 
 export default class NavInternals extends Component {
 
@@ -10,7 +11,9 @@ export default class NavInternals extends Component {
                     <div className="fixed-header">
                         <div className="container-fluid">
                             <div className="header-logo">
+
                                 <a href="#"><h4><span><i className="fa fa-plane"></i> AtTh</span>eGATE</h4></a>
+
                             </div>
                             {/* <!-- end header-logo --> */}
 
@@ -28,6 +31,7 @@ export default class NavInternals extends Component {
                         {/* <!-- end fixed-header --> */}
                     </div>
                 </div>
+                {/* <SC_Sidebar/> */}
             </div>
         )
     }

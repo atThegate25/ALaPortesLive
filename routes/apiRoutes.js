@@ -9,7 +9,7 @@ const STBProductsStarbucks = require('../models/stbproducts');
 router.get("/mcdapi/api", (req, res) => MCDProducts.find({}).then(dbMCDProducts => res.json(dbMCDProducts)));
 // read one
 router.get("/mcdapi/api/:id", (req, res) => MCDProducts.find({_id: req.params.id}).then(dbMCDProducts => res.json(dbMCDProducts)));
-router.post("/mcdapi/api/", (req, res) => MCDProducts.create(req.body).then(dbMCDProducts => console.log(dbMCDProducts) 
+router.post("/mcdapi/api/", (req, res) => MCDProducts.create(req.body).then(dbMCDProducts => res.json(dbMCDProducts) 
 // res.json(dbMCDProducts)
 ));
 router.put("/mcdapi/:id", (req, res) => MCDProducts.updateOne({ _id: req.params.id }, req.body).then(dbMCDProducts => res.json(dbMCDProducts)));
@@ -19,10 +19,10 @@ router.delete("/mcdapi/:id", (req, res) => MCDProducts.deleteOne({_id: req.param
 // read all
 router.get("/pbyapi/api", (req, res) => PBYProducts.find({}).then(dbPBYProducts => res.json(dbPBYProducts)));
 // read one
-router.get("pbyapi/api/:id", (req, res) => PBYProducts.find({_id: req.params.id}).then(dbPBYProducts => res.json(dbPBYProducts)));
+router.get("/pbyapi/api/:id", (req, res) => PBYProducts.find({_id: req.params.id}).then(dbPBYProducts => res.json(dbPBYProducts)));
 router.post("/pbyapi/api", (req, res) => PBYProducts.create(req.body).then(dbPBYProducts => res.json(dbPBYProducts)));
-router.put("pbyapi/api/:id", (req, res) => PBYProducts.updateOne({ _id: req.params.id }, req.body).then(dbPBYProducts => res.json(dbPBYProducts)));
-router.delete("pbyapi/api/:id", (req, res) => PBYProducts.deleteOne({_id: req.params.id}).then(dbPBYProducts=>res.json(dbPBYProducts)));
+router.put("/pbyapi/api/:id", (req, res) => PBYProducts.updateOne({ _id: req.params.id }, req.body).then(dbPBYProducts => res.json(dbPBYProducts)));
+router.delete("/pbyapi/api/:id", (req, res) => PBYProducts.deleteOne({_id: req.params.id}).then(dbPBYProducts=>res.json(dbPBYProducts)));
 
 //Starbucks Routes
 // read all
