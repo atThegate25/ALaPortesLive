@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Alert} from "react-bootstrap";
+import {Alert, bsStyle} from "react-bootstrap";
 import "./Flight.css";
 import axios from 'axios';
 
@@ -14,9 +14,12 @@ const airlines = [
 	"Alaska Airlines AS", 
 	"British Airways BA",
 	"Spirit Airlines NK",
-	"Frontier Airlines F9"
+    "Frontier Airlines F9",
+    "AeroMexico AM",
+    "Avianca AV",
+    "Iberia IB"
 ]
-let _airline, _airlinepicked
+let _airline
 
 class Autocomplete extends Component {
 	
@@ -91,10 +94,11 @@ class Flight extends Component {
                 this.setState({terminal:response.data.flightStatuses[0].airportResources.departureTerminal})
                 console.log(this.state.terminal);console.log(this.state.gate)
             })
-            .catch(error => {alert("Invalid Flight Info")});
+            .catch(error => 
             //  {<Alert bsStyle="warning">
             //     <strong>Holy guacamole!</strong> Invalid Flight Info!
             //     </Alert>});
+            {alert("Invalid Flight Info")});
     };
 
     render() {
@@ -120,9 +124,10 @@ class Flight extends Component {
                     />
                     <button className="btn btn-info" type="submit"onClick={this.handleFormSubmit}>Submit</button>
                     <p>
-                        Your oder will be delivered at Terminal {this.state.terminal} Gate {this.state.gate}
+                        Your order will be delivered at Terminal {this.state.terminal} Gate {this.state.gate}
                     </p>
-                </form>                   
+                </form>        
+
            </div>
         );
     }

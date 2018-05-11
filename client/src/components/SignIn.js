@@ -7,10 +7,13 @@ import * as routes from '../constants/routes';
 import '../App.css';
 
 const SignInPage = ({ history }) =>
-    <div>
-        <SignInForm history={history} />
-        <SignUpLink />
-    </div>
+
+   <div>
+       {/* <h1>SignIn</h1> */}
+       <SignUpLink />
+       <SignInForm history={history} />
+   </div>
+
 
 const byPropKey = (propertyName, value) => () => ({
     [propertyName]: value,
@@ -23,6 +26,7 @@ const INITIAL_STATE = {
 };
 
 class SignInForm extends Component {
+
     constructor(props) {
         super(props);
 
