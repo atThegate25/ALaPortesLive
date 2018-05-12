@@ -8,10 +8,9 @@ export default class InputComponent1 extends Component {
 
     }
     handleInputChange = (event) => {
-        // const name = event.target.name;
+  
         const value = event.target.value;
-        // console.log (name + value)
-        // console.log(event.target)
+  
 
         this.setState({
             value: value

@@ -97,7 +97,12 @@ class Flight extends Component {
                 this.setState({ gate: response.data.flightStatuses[0].airportResources.departureGate })
                 this.setState({ terminal: response.data.flightStatuses[0].airportResources.departureTerminal })
                 console.log(this.state.terminal); console.log(this.state.gate)
-                axios.post("/pbyapi/api/", response).then(data => this.updateCart());
+                
+                const flightdata = {
+                    gate: response.data.flightStatuses[0].airportResources.departureGate,
+                    terminal: response.data.flightStatuses[0].airportResources.departureTerminal
+                } 
+                axios.post("/flight/api/", flightdata).then(console.log('Flight Data Recorded'));
             })
             .catch(error =>
             //  {<Alert bsStyle="warning">
@@ -122,7 +127,7 @@ class Flight extends Component {
                         <Autocomplete options={airlines}
                             ref={input => _airline = input} />
                             <br />
-                        <label>   Flight Number </label>
+                        <label className="flnum"> Flight Number  </label>
                         <input
                             value={this.state.flightnumber}
                             name="flightnumber"
@@ -130,11 +135,11 @@ class Flight extends Component {
                             type="text"
                             placeholder="Flight Number"
                         />
-                        <button className="btn btn-info" type="submit" onClick={this.handleFormSubmit}>Submit</button>
+                        <button className="btn btn-orange btn-radius" type="submit" onClick={this.handleFormSubmit}>Submit</button>
                         <p>
                             Your order will be delivered at Terminal {this.state.terminal} Gate {this.state.gate}
                         </p>
-                        <Link to={routes.PBYCART}><button className="btn btn-info">Order Food</button></Link>
+                        <Link to={routes.PBYCART}><button className="btn btn-orange btn-radius">Order Food</button></Link>
                     </form>
                 </div>
 

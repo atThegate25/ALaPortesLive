@@ -3,53 +3,62 @@ import Cart from '../Carts/Cart.js'
 import axios from "axios"
 
 class Checkout extends Component {
-  
+    
     state = {
-        // name: menuItems[0].name,
+
         value: 0,
-        products: []
-
+        products: [],
+        flights: [],
+        gate: "",
+        terminal: ""
     }
-
+    
     updateCart = () => {
         axios.get("/pbyapi/api/").then((response) => {
-
+            
             this.setState({
                 products: response.data
             })
             console.log(this.state.products)
         });
     } 
-
-render() {
-
+    
+    // componentDidMount ()  {
+    //     axios.get("/flight/api/").then((data) => {
+    //         console.log(data)
+            
+    //         this.setState({
+    //             flights: data,
+    //             // gate: response.gate
+    //         })
+    //     });
+    // } 
+    
+    render() {
+       
+        
   return (
     <div>
 <div className="sidenav-content"/>
  <div id="mySidenav" className="sidenav" />
     <div id="web-name">
         <h2><span><i className="far fa-star"></i></span> <br/> <span>Check</span>out</h2>             	
-        <ul className="main-menu-social list-unstyled list-inline text-center">
-            <li><a href="#"><span><i className="fab fa-facebook-f"></i></span></a></li>
-            <li><a href="#"><span><i className="fab fa-pinterest"></i></span></a></li>
-            <li><a href="#"><span><i className="fab fa-dribbble"></i></span></a></li>
-            <li><a href="#"><span><i className="fab fa-google-plus-g"></i></span></a></li>
-        </ul>  
     </div>
 
     <div id="main-menu">
         
+        
         <div className="list-group panel">
             
-            <a href="contact.html" className="list-group-item"><span>              
+            <a ><span>              
                 <Cart update={this.updateCart}
                     products={this.state.products}
                     delete={this.deleteItem} />
             </span>Items</a>
-            <a href="login.html" className="list-group-item"><span></span>Total</a>
+
         
         </div>
-        <div className="form-group">
+        <div className="form-group m2">
                                  <select class="form-control">
                                     <option selected="">Choose Payment</option>
                                     <option>VISA</option>
@@ -58,19 +67,19 @@ render() {
                                  </select><i className="fa fa-lock sidebar-icon"></i>
                             </div>
                                         
-                                <div className="form-group">
+                                <div className="form-group m2">
                                   <input type="text" class="form-control" placeholder="Card Number" required=""/>
                                 </div>   
 
                             <div className="row">
                                 <div className="col-xs-6 col-sm-6">
-                                    <div className="form-group">
+                                    <div className="form-group m2">
                                          <input type="text" className="form-control dpd" placeholder="Expire Date" required=""/>
                                     </div>
                                 </div>
                                     
                                 <div className="col-xs-6 col-sm-6">
-                                    <div className="form-group">
+                                    <div className="form-group m2">
                                          <input type="text" className="form-control" placeholder="CVV Code" required=""/>
                                     </div>
                                 </div>

@@ -1,21 +1,21 @@
 const axios = require("axios");
 const router = require("express").Router();
-const MCDProducts = require('../models/mcdproducts');
+const FlightInfo = require('../models/FlightInfo');
 const PBYProducts = require('../models/pbyproducts');
 const STBProductsStarbucks = require('../models/stbproducts');
 
-//McDonalds Routes
+//Flight Data Routes
 // read all
-router.get("/mcdapi/api", (req, res) => MCDProducts.find({}).then(dbMCDProducts => res.json(dbMCDProducts)));
+router.get("/flight/api", (req, res) => FlightInfo.find({}).then(dbFlightInfo => res.json(dbFlightInfo)));
 // read one
-router.get("/mcdapi/api/:id", (req, res) => MCDProducts.find({_id: req.params.id}).then(dbMCDProducts => res.json(dbMCDProducts)));
-router.post("/mcdapi/api/", (req, res) => MCDProducts.create(req.body).then(dbMCDProducts => res.json(dbMCDProducts) 
-// res.json(dbMCDProducts)
+router.get("/flight/api/:id", (req, res) => FlightInfo.find({_id: req.params.id}).then(dbFlightInfo => res.json(dbFlightInfo)));
+router.post("/flight/api/", (req, res) => FlightInfo.create(req.body).then(dbFlightInfo => res.json(dbFlightInfo) 
+// res.json(dbFlightInfo)
 ));
-router.put("/mcdapi/:id", (req, res) => MCDProducts.updateOne({ _id: req.params.id }, req.body).then(dbMCDProducts => res.json(dbMCDProducts)));
-router.delete("/mcdapi/:id", (req, res) => MCDProducts.deleteOne({_id: req.params.id}).then(dbMCDProducts=>res.json(dbMCDProducts)));
+router.put("/flight/:id", (req, res) => FlightInfo.updateOne({ _id: req.params.id }, req.body).then(dbFlightInfo => res.json(dbFlightInfo)));
+router.delete("/flight/:id", (req, res) => FlightInfo.deleteOne({_id: req.params.id}).then(dbFlightInfo=>res.json(dbFlightInfo)));
 
-//Potbelly Routes
+//Cart Routes
 // read all
 router.get("/pbyapi/api", (req, res) => PBYProducts.find({}).then(dbPBYProducts => res.json(dbPBYProducts)));
 // read one
