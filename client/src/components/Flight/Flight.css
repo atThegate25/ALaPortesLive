@@ -1,22 +1,29 @@
 .form {
-  margin:5px;
-  position: absolute;
-  left: 30%;
-  top: 25%;
-  width: 35%;
-  text-align: center;
+    margin: auto;
+    display: block;
+    width: 50%;
+    text-align: center;
 }
 
 .form input {
-  font-size: 10px;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left:190px;
-  width: 22%;
-  text-align: center;
+    font-size: 10px;
+    display: inline-block;
+    margin: auto;
+    width: 50%;
+    text-align: center;
 }
- 
-.OrderFood {
-  
+
+.bckgrdImage {
+    background-image: url("https://lifetomyfullest.files.wordpress.com/2014/04/running-through-airport.jpg");
+}
+
+.form1 {
+    height: 300px;
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: lightgray;
 }
