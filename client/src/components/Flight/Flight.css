@@ -27,3 +27,11 @@
     margin-bottom: 20px;
     background-color: lightgray;
 }
+
+.btn.btn-orange.btn-radius {
+    margin-left: 10px;
+}
+
+.flnum {
+    margin-right: 10px;
+}

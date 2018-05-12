@@ -3,15 +3,16 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ProductSchema = new Schema({
-    name: {
+    terminal: {
         type: String,
         trim: true
     },
-    quantity: {
-        type: Number,
+    gate: {
+        type: String,
+        trim: true
     }
 });
 
-const MCDProducts = mongoose.model("MCDProducts", ProductSchema);
+const FlightInfo = mongoose.model("FlightInfo", ProductSchema);
 
-module.exports = MCDProducts;
+module.exports = FlightInfo;

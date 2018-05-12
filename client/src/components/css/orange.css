@@ -119,6 +119,11 @@
     border-color: #7a1b0e;
 }
 
+.form-group.m2 {
+    width: 70%;
+    margin: auto;
+}
+
 
 /* -----------------------------------------------------
 		RGBA
