@@ -4,11 +4,9 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem, fixedTop } from 'react-boo
 import SignOutButton from './SignOut';
 import '../App.css'
 import * as routes from '../constants/routes';
-// import NavInternals from './navBar/NavInternals'
 
 const Navigation = ({ authUser }) =>
   <div>
-    {/* <NavInternals /> */}
     {authUser
       ? <NavigationAuth />
       : <NavigationNonAuth />
@@ -25,7 +23,7 @@ const NavigationAuth = () =>
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav pullRight>
-        <NavItem eventKey={1}><Link to={routes.LANDING}><button><SignOutButton /></button></Link></NavItem>
+        <NavItem eventKey={1}><Link to={routes.LANDING}><button className="btn signout"><SignOutButton /></button></Link></NavItem>
       </Nav>
     </Navbar.Collapse>
   </Navbar>;
@@ -36,7 +34,6 @@ const NavigationNonAuth = () =>
     <Navbar.Header>
       <Navbar.Brand>
         <a href="/"><h4><span><i className="fa fa-plane"></i> <strong>AtTh</strong></span><strong>eGATE</strong></h4></a>
-        {/* <a href="#brand">React-Bootstrap</a> */}
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
@@ -52,21 +49,5 @@ const NavigationNonAuth = () =>
     </Navbar.Collapse>
   </Navbar>;
 
-
-
-
-
-
-// <NavInternals >
-// <br />
-// <br />
-// <br />
-// <div>
-//     <ul>
-//         <li><Link to={routes.LANDING}><button className="btn">Landing</button></Link></li>
-//         <li><Link to={routes.SIGN_IN}><button className="btn btn-info">Sign In</button></Link></li>
-//     </ul>
-// </div>
-// </NavInternals>
 
 export default Navigation;
